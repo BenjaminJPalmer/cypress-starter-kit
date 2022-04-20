@@ -24,17 +24,17 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', (user, password) => {
+// Cypress.Commands.add('login', (user, password) => {
   
   // Replace with your app's login page URL
   // or use cy.get('#my-account-button').click() command (or similar) to open a login modal
-  cy.visit('/login')
+//   cy.visit('/login')
 
-  cy.get('input[name="username"]').type(user)
-  cy.get('input[name="password"]').type(password)
+//   cy.get('input[name="username"]').type(user)
+//   cy.get('input[name="password"]').type(password)
 
-  cy.get('form#login').submit()
-})
+//   cy.get('form#login').submit()
+// })
 
 Cypress.Commands.add('viewportPreset', (size = '') => {
   switch (size) {
@@ -59,4 +59,8 @@ Cypress.Commands.add('viewportPreset', (size = '') => {
     default:
       cy.viewport(Cypress.env('viewportWidth'), Cypress.env('viewportHeight'))
   }
+})
+
+Cypress.Commands.add('submitForm', () => {
+  cy.get('#form_general > .inputs > .btn').click()
 })
