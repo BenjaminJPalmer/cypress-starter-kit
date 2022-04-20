@@ -1,0 +1,13 @@
+{
+    "baseUrl": "{ url }",
+    "watchForFileChanges": false,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "chromeWebSecurity": false,
+    "fixturesFolder": "tests/cypress/fixtures",
+    "integrationFolder": "tests/cypress/integration",
+    "pluginsFile": "tests/cypress/plugins/index.js",
+    "screenshotsFolder": "tests/cypress/screenshots",
+    "supportFile": "tests/cypress/support/index.js",
+    "videosFolder": "tests/cypress/videos"
+}
