@@ -48,5 +48,5 @@ describe('Contact Form Test', () => {
   // it('Sends the form successfully', () => {
   //   cy.submitForm()
   //   cy.get('#form_general > #form-success').should('be.visible')
-  })
+  // })
 })
