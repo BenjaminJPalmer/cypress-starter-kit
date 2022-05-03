@@ -44,8 +44,9 @@ describe('Contact Form Test', () => {
     cy.get('#i-amphtml-aria-desc-form_general-3').should('not.be.visible') // Test message validation message is not visible
   })
 
-  it('Sends the form successfully', () => {
-    cy.submitForm()
-    cy.get('#form_general > #form-success').should('be.visible')
+  // Uncomment to submit form
+  // it('Sends the form successfully', () => {
+  //   cy.submitForm()
+  //   cy.get('#form_general > #form-success').should('be.visible')
   })
 })
